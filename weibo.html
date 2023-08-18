@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	
+	<title>
+		
+			Micro.blog - @me
+		
+	</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://micro.blog/css/main.css">
+	<link rel="shortcut icon" href="/images/icons/favicon_32.png" type="image/x-icon" />
+	<link rel="webmention" href="https://micro.blog/webmention" />
+	<link rel="subscribe" href="https://micro.blog/users/follow" />
+	
+		<link rel="alternate" type="application/json" title="JSON Feed" href="https://micro.blog/posts/me" />
+	
+	
+</head>
+<body>
+
+
+	<style>
+		nav {
+			float: right;
+			line-height: 56px;
+			padding-top: 4px;
+		}
+		
+		nav a {
+			padding-right: 6px;
+		}
+		
+		.container {
+			width: 70%;
+		}
+
+		.splash_signup {
+			display: none;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+
+		.splash_startbutton {
+			background-color: #FEE199;
+			border-color: #FDB52B;
+			color: black;
+		}
+		
+		.splash_startbutton:hover {
+			background-color: #FDC75C;
+			border-color: #FDB52B;
+			color: black;
+		}
+						
+		@media screen and (max-width: 600px) {
+			nav {
+				float: none;
+				line-height: 22px;				
+				padding-bottom: 10px;
+			}
+			
+			.container {
+				width: 90%;
+			}
+
+			.splash_signup {
+				margin-left: 0px;
+				padding-bottom: 10px;
+			}
+		}
+	</style>
+
+	<div class="container">
+		<header>
+			<h1 class="header_logo"><a href="/">Micro.blog</a></h1>
+
+			<div class="splash_signup">
+				
+					<p><a href="/register" class="btn btn-default splash_startbutton">Sign up now: free 10-day trial</a></p>
+				
+			</div>
+					
+			<nav>
+				<a href="/signin">Sign In</a>
+				<a href="/discover">Discover</a>
+				<a href="/pricing">Pricing</a>
+				<a href="https://help.micro.blog/">Help</a>
+			</nav>
+		</header>
+		
+		<div class="alert alert-warning user_options_alert" style="display: none;">
+	@me has been reported. Thank you.
+</div>
+
+<div class="alert alert-info" role="alert" style="display: block;" id="timeline_info">
+	<b>Mike Evans</b> 
+	<br />微博<br />			
+	<a href="https://me.micro.blog/">https://memicroblog/  微博</a>
+</div>
+
+<main class="main">
+  
+
+<section class="section">
+  <h2 class="section__title">Help topics</h2>
+
+  
+<section class="category" aria-labelledby="about">
+  <header class="category__header">
+    <h3 class="category__title" id="about">Understanding Micro.blog</h3>
+    
+    <p class="category__description">Why Micro.blog exists and how it is different.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2018/video-intro/">Welcome to Micro.blog</a></li>
+    
+      <li class="category__item"><a href="/2015/why-i-created-this/">Why I created Micro.blog</a></li>
+    
+      <li class="category__item"><a href="/2018/twitter-differences/">What’s the difference between Micro.blog and Twitter?</a></li>
+    
+
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="getting-started">
+  <header class="category__header">
+    <h3 class="category__title" id="getting-started">Getting started</h3>
+    
+    <p class="category__description">First steps with Micro.blog and interacting with other users.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+
+      <li class="category__item"><a href="/2018/books/">Books on Micro.blog</a></li>
+    
+      <li class="category__item"><a href="/2019/following/">Following users</a></li>
+    
+      <li class="category__item"><a href="/2020/bookmarks/">Bookmarks</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="community">
+  <header class="category__header">
+    <h3 class="category__title" id="community">Community</h3>
+    
+    <p class="category__description">Guidelines and discovering new people.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2017/community-guidelines/">Community guidelines</a></li>
+    
+      <li class="category__item"><a href="/2019/discover-timeline/">Using the Discover timeline and categories</a></li>
+    
+      <li class="category__item"><a href="/2019/finding-people/">Finding people to follow</a></li>
+    
+      <li class="category__item"><a href="/2019/micro-monday/">Micro Monday</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="apps">
+  <header class="category__header">
+    <h3 class="category__title" id="apps">Apps</h3>
+    
+    <p class="category__description">Posting to Micro.blog from other apps and services.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2017/ios-version/">Micro.blog for iOS</a></li>
+    
+      <li class="category__item"><a href="/2017/mac-version/">Micro.blog for Mac</a></li>
+    
+      <li class="category__item"><a href="/2017/micropub-clients/">Third-party apps</a></li>
+    
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="hosted">
+  <header class="category__header">
+    <h3 class="category__title" id="hosted">Hosting on Micro.blog</h3>
+    
+    <p class="category__description">Managing and customising your Micro.blog website.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2015/custom-domains/">Custom domains</a></li>
+    
+      <li class="category__item"><a href="/2017/custom-css/">Custom CSS</a></li>
+    
+      <li class="category__item"><a href="/2017/wordpress-import/">WordPress import</a></li>
+    
+      <li class="category__item"><a href="/2020/markdown-import/">Markdown import</a></li>
+    
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="photoblogging">
+  <header class="category__header">
+    <h3 class="category__title" id="photoblogging">Photoblogging</h3>
+    
+    <p class="category__description">Share your photos with other Micro.blog users.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2019/including-photos/">Including photos</a></li>
+    
+      <li class="category__item"><a href="/2018/sharing-photos-from-ios/">Sharing photos from iOS</a></li>
+    
+      <li class="category__item"><a href="/2018/instagram-import/">Import from Instagram</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="podcasting">
+  <header class="category__header">
+    <h3 class="category__title" id="podcasting">Podcasting</h3>
+    
+    <p class="category__description">Create and publish your own short-form podcast.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2018/microcasting/">Podcasting with Micro.blog</a></li>
+    
+      <li class="category__item"><a href="/2018/wavelength/">Using Wavelength</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="cross-posting">
+  <header class="category__header">
+    <h3 class="category__title" id="cross-posting">Cross-posting to other social networks</h3>
+    
+    <p class="category__description">Integrate with other social networks while still owning your content.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item">
+      <a href="/2016/cross-posting-twitter/">Cross-posting to Twitter, Medium, Mastodon, and more</a></li>
+    
+      <li class="category__item">
+      <a href="/2015/cross-posting-ifttt/">Cross-posting with the IFTTT service</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="self-hosted">
+  <header class="category__header">
+    <h3 class="category__title" id="self-hosted">Connecting external sites to Micro.blog</h3>
+    
+    <p class="category__description">Micro.blog works great with existing blogs.</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2018/setting-up-wordpress/">Setting up WordPress</a></li>
+    
+      <li class="category__item"><a href="/2017/web-site-verification/">Web site verification</a></li>
+    
+      <li class="category__item"><a href="/2016/sidebar-js/">JavaScript include with Sidebar.js</a></li>
+    
+      <li class="category__item"><a href="/2018/resources/">Micro.blog icons</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="developers">
+  <header class="category__header">
+    <h3 class="category__title" id="developers">Developers</h3>
+    
+    <p class="category__description">Build and integrate services with Micro.blog</p>
+<p>
+    
+  </p></header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2018/api-overview/">API overview</a></li>
+    
+      <li class="category__item"><a href="/2017/api-feeds/">Feeds</a></li>
+    
+      <li class="category__item"><a href="/2018/activitypub/">ActivityPub</a></li>
+    
+      <li class="category__item"><a href="/2017/api-posting/">Posting API</a></li>
+    
+      <li class="category__item"><a href="/2017/api-json/">JSON API</a></li>
+    
+      <li class="category__item"><a href="/2018/api-authentication/">Authentication</a></li>
+    
+      <li class="category__item"><a href="/2019/api-indieauth/">IndieAuth</a></li>
+    
+      <li class="category__item"><a href="/2018/url-schemes/">iOS and Mac URL schemes</a></li>
+    
+      <li class="category__item"><a href="/2020/xmlrpc-microblog/">Micro.blog XML-RPC API</a></li>
+    
+      <li class="category__item"><a href="/2020/api-markers/">JSON API: Markers</a></li>
+    
+      <li class="category__item"><a href="/2020/api-bookmarks/">JSON API: Bookmarks</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+  
+<section class="category" aria-labelledby="policies">
+  <header class="category__header">
+    <h3 class="category__title" id="policies">Account and policies</h3>
+    
+  </header>
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2019/yearly/">Yearly pricing</a></li>
+    
+      <li class="category__item"><a href="/2018/tos/">Terms of service</a></li>
+    
+      <li class="category__item"><a href="/2018/privacy-policy/">Privacy policy</a></li>
+    
+      <li class="category__item"><a href="/2018/copyright-policy/">Copyright and DCMA policy</a></li>
+    
+      <li class="category__item"><a href="/2019/deleting-account/">Deleting your account</a></li>
+    
+    </ul>
+  </div>
+</section>
+
+
+</section>
+
+<section class="section">
+  <h2 class="section__title">Community resources</h2>
+  <div class="section__items">
+  
+    <section class="resource">
+  <h3 class="resource__title">
+    <a href="https://github.com/microdotblog/issues/issues">GitHub</a>
+  </h3>
+  
+  <p class="resource__description">If you’ve found a bug, you can submit an issue on GitHub.</p>
+  
+</section>
+
+  
+    <section class="resource">
+  <h3 class="resource__title">
+    <a href="https://manton.org">Manton.org</a>
+  </h3>
+  
+  <p class="resource__description">The blog of Micro.blog founder, Manton Reece.</p>
+  
+</section>
+
+  
+    <section class="resource">
+  <h3 class="resource__title">
+    <a href="https://micro.blog/news">@news</a>
+  </h3>
+  
+  <p class="resource__description">Follow <a href="https://micro.blog/news" class="user-mention">@news</a>
+	  on Micro.blog for service updates and product announcements.</p>
+  
+</section>
+
+  
+    <section class="resource">
+  <h3 class="resource__title">
+    <a href="https://micro.blog/help">@help</a>
+  </h3>
+  
+  <p class="resource__description">Send questions to 
+  <a href="https://micro.blog/help" class="user-mention">@help</a> on Micro.blog.</p>
+  
+</section>
+
+  
+    <section class="resource">
+  <h3 class="resource__title">
+    <a href="https://m.b.wiki.eli.li">Micro.wiki</a>
+  </h3>
+  
+  <p class="resource__description">A community-maintained resource.</p>
+  
+</section>
+
+  
+    <section class="resource">
+  <h3 class="resource__title">
+    <a href="https://custom.micro.blog">Customizing Micro.Blog</a>
+  </h3>
+  
+  <p class="resource__description">Tutorials on creating custom themes and more by Miraz Jordan.</p>
+  
+</section>
+
+  
+  </div>
+</section>
+
+
+</main>
+
+	
+  <div class="category__main">
+    <ul class="category__items">
+    
+      <li class="category__item"><a href="/2017/ios-version/">Micro.blog for iOS</a></li>
+    
+      <li class="category__item"><a href="/2017/mac-version/">Micro.blog for Mac</a></li>
+    
+      <li class="category__item"><a href="/2017/micropub-clients/">Third-party apps</a></li>
+    
+    
+
+  </div>
+</section>
+
+
+<div class="page-content">
+      <div class="wrapper">
+        <div class="home h-feed">
+
+      <li class="h-entry">
+		
+
+        <a href="/" class="u-url">
+		<span class="post-meta">
+		<time class="dt-published" datetime="2017-11-27 21:46:00 UTC">Nov 27, 2017</time>
+		</span></a>
+
+        <div class="e-content">
+         	<p>Stonegate #imaceleb</p>
+
+        </div>
+      </li>
+    
+      <li class="h-entry">
+		
+
+        <a href="/2017/11/27/this-is-my.html" class="u-url"><span class="post-meta">
+	<time class="dt-published" datetime="2017-11-27 16:32:00 UTC">Nov 27, 2017</time></span></a>
+
+        <div class="e-content">
+         	<p>This is my first post!  We are restoring this old <strong>Formula1</strong> 
+		car at work. Here are a couple of pics of our progress. </p>
+
+             <p><img src="http://me.micro.blog/uploads/2017/95e2df3605.jpg" width="200" height="200" /></p>
+
+        </div>
+      </li>
+    
+  </ul>
+
+
+
+
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+</div>
+
+      </div>
+    </div>
+
+		
+<p><b>Basics: free</b></p>
+
+<ul>
+	<li>Your own Micro.blog username.</li>
+	<li>Replying to other blog posts.</li>
+	<li>Add an external blog such as WordPress for posting.</li>
+	<li>Use the iOS and Mac apps to browse the timeline or post to supported external blogs.</li>
+	<li>No Micro.blog-hosted blog.</li>
+	<li>No page at username.micro.blog.</li>
+</ul>
+
+<p><b>Hosted microblog: $5/month</b></p>
+
+<ul>
+	<li>All the basics.</li>
+	<li>Cross-posting from any blog to Twitter, Medium, Tumblr, LinkedIn, and Mastodon.</li>
+	<li>Hosted microblog at username.micro.blog.</li>
+	<li>Easy posting from the web, iOS, and Mac apps.</li>
+	<li>WordPress, Tumblr, and Medium import including redirecting previous URLs.</li>
+</ul>
+
+<p><b>Micro.blog Premium: podcasting, video, and bookmarks: $10/month</b></p>
+
+<ul>
+	<li>All the hosted microblog features.</li>
+	<li>Bookmark archiving and highlights.</li>
+	<li>Hosting for podcasts. We’ll create a podcast feed for you automatically.</li>
+	<li>Hosting for short videos.</li>
+	<li>Upload size limited to 45 MB per file.</li>
+</ul>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/markdown/markdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+<script src="https://micro.blog/css/js/microblog.js"></script>
+
+
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text">Follow <a href="https://micro.blog/me">@me on Micro.blog</a>.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
