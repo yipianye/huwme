@@ -1,0 +1,7 @@
+.snow {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(#fff 0%, rgba(255, 255, 255, 0) 60%);
+  border-radius: 50%;
+}
