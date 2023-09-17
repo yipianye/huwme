@@ -25,7 +25,7 @@ const canvas = document.getElementById('canvase')
 const ctx = canvas.getContext("2d")
 const leon = new LeonSans({
   size: size <= maxSize ? size : maxSize,
-  text: 'Huw\. Me\n\nContent Delivery Network',
+  text: 'cd\. n\n\nContent Delivery Network',
   color: ['#fff'],
   leading: -2,
   weight: 300
