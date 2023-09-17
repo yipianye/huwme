@@ -25,7 +25,7 @@ const canvas = document.getElementById('canvase')
 const ctx = canvas.getContext("2d")
 const leon = new LeonSans({
   size: size <= maxSize ? size : maxSize,
-  text: CD\. N\n\nContent Delivery Network',
+  text: 'Huw\. Me\n\nContent Delivery Network',
   color: ['#fff'],
   leading: -2,
   weight: 300
@@ -48,7 +48,7 @@ function getIdx() {
 }
 
 function start() {
-  // 修改年份
+  // 淇敼骞翠唤
   const $box = document.getElementById('year')
   $box.innerText = (new Date).getFullYear()
 
