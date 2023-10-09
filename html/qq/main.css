@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+
+
+
+
+html{font-size:62.5%}
+
+body, ol,ul,dl,li,dt,dd, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {margin:0;padding:0}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+
+body {
+
+	font:1.0rem "Microsoft YaHei",Arial, Helvetica;
+
+	background:#fff;
+
+	 color: #333;
+
+	-webkit-text-size-adjust:100%;
+
+}
+
+a{color:#333;text-decoration:none;}
+
+a:hover{color:#faad08;text-decoration:none;}
+
+em,i{font-style:normal; }
+
+ol,ul,dl,li,dt,dd {list-style:none}
+
+img {border:0;vertical-align:middle} a img{border:0}
+
+table {border-collapse:collapse;border-spacing:0}  
+
+
+
+.fl{float:left;}.fr{float:right;}.cl{clear:both;}  .over{overflow:hidden;} 
+
+.fix{*zoom:1;}.fix:after,.fix:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}.z{_zoom:1;}
+
+.layout {width:600px;margin:0 auto}  input{outline:none; } textarea{resize:none} 
+
+
+
+
+
+.state_wrap{width: 100%;min-width: 320px;background-color: #fff;height: 100%;position: absolute;top: 0;right: 0;bottom: 0;left: 0}
+
+.state_center{max-width: 640px;margin: 0 auto;text-align: center}
+
+.state_center .icon{padding-top: 46%}
+
+.state_center .icon img{width: 26%;display: inline-block;}
+
+.state_center .title{font-size: 16px;color: #000;margin-top: 20px;}
+
+.state_center .website{font-size: 18px;color: #292929;margin-bottom: 10px}
+
+.to_num,.to_touch{width: 110px;height: 38px;line-height: 38px;background-color: #fff;display: block;margin: 10px auto 10px;font-size: 18px}
+
+.to_num:hover,.to_touch:hover{color:#faad08;}
+
+.to_num:active,.to_touch:active{color:#faad08;}
+
+.to_num img,.to_touch img{width: 10px;height:auto;margin-left: 4px}
