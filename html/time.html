@@ -110,42 +110,16 @@ body {
    // 每隔1秒更新时间
    setInterval(updateTime, 1000);
 
-   // Markdown记事本
-   var markdownEditor = document.getElementById("markdownEditor");
-   var markdownPreview = document.getElementById("markdownPreview");
-   var saveButton = document.getElementById("saveButton");
-
-   // 实时渲染Markdown文本
-   function renderMarkdown() {
-     var markdownText = markdownEditor.value;
-     var renderedHtml = marked.parse(markdownText);
-     markdownPreview.innerHTML = renderedHtml;
-   }
-
-   // 保存文本到本地代码省略，请使用上面的代码
-function saveText() {
-							var text = markdownEditor.value;
-							var blob = new Blob([text], {type: "text/markdown"});
-							var url = URL.createObjectURL(blob);
-							var link = document.createElement("a");
-							link.href = url;
-							link.download = "notes.md";
-							link.click();
-						}
-
-   // 监听Ctrl + S组合键保存文本代码省略，请使用上面的代码
-document.addEventListener("keydown", function(event) {
-							if (event.ctrlKey && event.key === "s") {
-											event.preventDefault();
-											saveText();
-										}
-						});
-    // 点击按钮保存文本代码省略，请使用上面的代码
-    saveButton.addEventListener("click", saveText);
-    // 实时渲染Markdown文本
-    markdownEditor.addEventListener("input", renderMarkdown);
-    // 初始化渲染Markdown文本
-    renderMarkdown();
  </script>
+	           <!-- guestbook. -->
+        <script src="https://utteranc.es/client.js"
+        repo="yipianye/guestbook"
+        issue-term="pathname"
+        label="Comments"
+        theme="github-light"      
+        crossorigin="anonymous"
+        async>
+</script>
+	
 </body>
 </html>
