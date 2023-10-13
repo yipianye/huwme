@@ -169,13 +169,13 @@ summary::-webkit-details-marker {
   color: var(--text-main);
 }
 /* details */
-/* details {
+details {
   display: block;
-} */
+} 
 /* summary */
-/* summary {
+ summary {
   display: list-item;
-} */
+} 
 template {
   display: none;
 }
