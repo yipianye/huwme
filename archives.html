@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Prs@qq.com">
+
+    <meta name="描述" content="临时停放页面.">
+
+
+    <meta name="keywords" content="YXW.Me • Huw.Me">
+
+
+<title>CDN • Yxw.Me • Huw.Me</title>
+
+
+
+    <link rel="icon" href="/huwmeassets/img/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/huwmeassets/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/huwmeassets/js/script.js"></script>
+    
+    <script src="/huwmeassets/js/tocbot.min.js"></script>
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Yxw.Me • Huw.Me</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Yxw.Me • Huw.Me</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            
+    <div class="container">
+    <div class="intro">
+        <div class="avatar">
+            <a href="/archives"><img src="/huwmeassets/img/avatar.png"></a>
+        </div>
+        <div class="nickname">YXW.Me • Huw.Me</div>
+        <div class="description"><p>你好，朋友！<strong>Hello friend！</strong> <br>尽全力做好一件事，实乃人生之首务。生命苦短，你应该过得开心些<strong>！</strong> </p>
+
+</div>
+        
+        <div class="links">
+            
+                
+                    <a class="link-item" title="Blog" href="/archives">
+                        
+                        
+                            <i class="iconfont icon-blog"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="ZhiHu" href="https://www.zhihu.com/">
+                        
+                        
+                            <i class="iconfont icon-zhihu"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Instagram" href>
+                        
+                        
+                            <i class="iconfont icon-instagram"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Reddit" href>
+                        
+                        
+                            <i class="iconfont icon-reddit"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Github" href="https://github.com">
+                        
+                        
+                            <i class="iconfont icon-github"></i>
+                        
+                    </a>
+        </div>
+        
+        <!-- guestbook. -->
+        <script src="https://utteranc.es/client.js"
+        repo="yipianye/guestbook"
+        issue-term="pathname"
+        label="Comments"
+        theme="github-light"      
+        crossorigin="anonymous"
+        async>
+</script>
+        
+    </div>
+</div>
+        
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 2023 | Powered by <a href="https://github.com" target="_blank">Github Pages </a> & <a href="https://github.com" target="_blank">Github </a> & 
+      <!-- time -->  
+        </span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
