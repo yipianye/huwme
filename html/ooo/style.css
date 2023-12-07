@@ -1,0 +1,114 @@
+:root{
+    --body_bg	:	#ffffff;
+    --body_color:	#00112c;
+    --header_one:	#ffffff;
+    --header_two:	#dee1e6;
+    --bord_color:	#dee1e6;
+    --h2_color	:	#00112c;
+    --btn_bg 	:	rgb(37 38 50 / 8%);
+}
+@media (prefers-color-scheme: dark) {
+    :root{
+    	--body_bg   :	#1c1c1e;
+        --body_color:	#ffffff;
+        --header_one:	#1c1c1e;
+        --header_two:	#000000;
+        --bord_color:	#353538;
+        --h2_color  :	#ffffff;
+        --btn_bg 	:	rgb(242 242 243 / 8%);
+    }
+}
+* {
+	margin:0;
+	padding:0;
+	border:none;
+}
+html{
+	font-size: 16px;
+}
+body {
+	font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;
+	background-color: var(--body_bg);
+	color: var(--body_color);
+}
+ul,li {
+	list-style:none;
+}
+header {
+	text-align:center;
+	padding:6vh 0;
+	background:var(--header_two);
+	background:radial-gradient(circle,var(--header_one) 30%,var(--header_two) 100%);
+}
+header h1 a {
+	color:inherit;
+	text-decoration:none;
+	font-size:1.5rem;
+}
+section {
+	padding:10vh 1rem;
+	text-align:center;
+}
+section p {
+	padding:0 1.5rem;
+	line-height:2.5em;
+}
+section h2 {
+	word-break:break-word;
+	margin:10vh 2rem;
+	font-size:8vw;
+	color: var(--h2_color);
+}
+section div {
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	gap:1rem;
+}
+section div button, section div a {
+	outline:none;
+	text-decoration: none;
+	border-radius: 0.3rem;
+	padding:0.7rem 1rem;
+	color:var(--body_color);
+	background-color: var(--bord_color);
+	background-color: var(--btn_bg);
+	font-size:1rem;
+	cursor:pointer;
+	line-height: 1.15rem;
+	max-width:100%;
+	word-break: break-all;
+}
+@media screen and (max-width:430px) {
+	section h2 {
+		font-size:10vw;
+	}
+	section div {
+		display:grid;
+	}
+}
+article {
+	padding:1rem;
+	max-width:768px;
+	margin:5vh auto;
+}
+article ul {
+	border:1px solid var(--bord_color);
+	border-radius:1rem;
+	padding:0.5rem 2rem;
+}
+article ul li {
+	font-weight: bold;
+	border-bottom:1px solid var(--bord_color);
+	padding:1rem 0;
+	word-break:break-word;
+	line-height:2rem;
+}
+article ul li:last-child {
+	cursor: pointer;
+	border:none;
+}
+article ul li a {
+	text-decoration:none;
+	color:inherit;
+}
