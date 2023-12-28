@@ -27,7 +27,7 @@ img.smaller{height:72px;border-radius:18px;object-fit: cover;}span {display: blo
 #box_container{text-align:left;margin:0 auto;font-size: 0;}.box {margin: 4px 9px 4px; width: 46px;border: 0; position:relative; display: inline-block;text-align: center;}
 .box a {width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
 .overlay {position: absolute;left: 0;top: 0;border-radius: 23px;width:46px;height: 46px;}
-.title {border-radius: 23px; color: #333333; width:46px; line-height:46px; height: 46px; font-size: 15px;}
+.title {border-radius: 23px; color: #333333; width:46px; line-height:46px; height: 46px; font-size: 15px;} //圆圈内文字颜色
 .url {margin:2px 0 0;width: 46px; height: 20px;line-height: 20px;white-space: normal;word-wrap: break-word;overflow: hidden;text-overflow: clip;-o-text-overflow: clip;ms-text-overflow: clip;color: #333;font-size: 10px;} //链接文字颜色/*链接文字颜色*/
 @media only screen and (min-width:128px){#box_container{width:64px}}
 @media only screen and (min-width:192px){#box_container{width:128px}}
