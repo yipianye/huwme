@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Keywords" content="GAN.SU,甘肃,甘肃网,大美甘肃,甘肃旅游">
+    <meta name="description" content="GAN.SU 甘肃是个好地方！">
+    <title> 甘肃是个好地方！</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>GAN.SU<br>甘肃是个好地方</h1>
+          <footer>&copy;&nbsp;2023 GAN.SU 甘肃是个好地方!&nbsp;<i class="fa fa-envelope"></i> username@abc.com</footer>
+      <a href="javascript:void(0);" id="float-tulip">
+          <!-- 左侧小图片-->
+        <img class="img-responsive center-block" src="https://s2.loli.net/2023/12/29/nY4RN8JeTdHVua1.png"></a>
+      <div class="pop_mask">
+         <div class="pop_box">
+          <div class="pop_con">
+            <h3>甘肃概况</h3>
+            <p>甘肃，简称“甘”或“陇”，中华人民共和国省级行政区，省会兰州市。甘肃，古属雍州，地处黄河上游，位于中国西北地区，东通陕西，西达新疆，南瞰四川、青海，北扼宁夏、内蒙古，
+              西北端与蒙古接壤，是古丝绸之路的锁匙之地和黄金路段。甘肃介于北纬32°11′—42°57′，东经92°13′—108°46′之间，它像一块瑰丽的宝玉，
+              镶嵌在中国中部的黄土高原、青藏高原和内蒙古高原上，东西蜿蜒1600多公里，全省土地总面积42.59万平方公里。</p>
+              <!--p>甘肃海拔</p-->
+              <footer>&copy;&nbsp;2023 GAN.SU 甘肃是个好地方!&nbsp;<i class="fa fa-envelope"></i> username@abc.com</footer>
+            <div class="close_mask"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/vidbg.js"></script>
+    <script>
+      var instance = new vidbg("body", {
+        //mp4: "http://abcb657e8bf75375b0539776a02d.mp4",
+        webm: "../media/video.webm",
+        poster: "https://s2.loli.net/2023/09/04/I8lKFSgXhJDntWM.jpg",  //背景图片
+        overlay: true,
+        overlayColor: '#000',
+        overlayOpacity: 0.1
+      },{
+        muted: false
+      });
+    </script>
+    <script>
+      $(".pop_mask .close_mask").click(function(){
+        $(".pop_mask").fadeOut(400);
+      });
+
+      $("#float-tulip").click(function(){
+        $(".pop_mask").fadeIn(400);
+
+      });
+  </script>
+
+  </body>
+</html>
