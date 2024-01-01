@@ -1,7 +1,7 @@
 * {padding:0;margin:0;box-sizing:border-box;}
 html{height:100%;-webkit-tap-highlight-color:rgba(255, 255, 255, 0.1);-webkit-focus-ring-color: rgba(0, 0, 0, 0);}
-/*无背景图片*/
-body{min-height:100%;max-width:100%; width: 600px;background: translate;margin: auto;text-align: center;}
+/*无背景图片 translate*/
+body{min-height:100%;max-width:100%; width: 600px;background: #ffffff;margin: auto;text-align: center;}
 /*背景图片*/
 /*body{min-height:100%;background-color: #37435e;background: #37435e url("https://cdn.jsdelivr.net/gh/zibaicai/cdn/meinv.jpg") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover;max-width:100%; width: 600px;margin: auto;text-align: center;}*/
 /*背景颜色*/
